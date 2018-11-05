@@ -8,12 +8,16 @@ def run_guessing_game
   puts "Guess a number between 1 and 6."
   puts "(Hint, it's #{number})"
   while gameend==false
-    guess=gets.chomp
-    guess=guess.to_i
-    if guess.is_a?(Integer)
-      puts "yup"
+    if guess=="exit"
+      exitgame()
+      gameend=true
+    end
+    if guess.to_i==number.to_i
+      puts "You guessed the correct number!"
+      exitgame()
+      gameend=true
     else
-      puts "nope"
+      puts "The computer guessed #{guess}."
     end
   end
 end
