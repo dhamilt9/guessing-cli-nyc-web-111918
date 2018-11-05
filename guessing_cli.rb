@@ -1,5 +1,11 @@
-def run_guessing_game
-  puts "Guess a number between 1 and 6."
-  guess=gets.chomp
+def exit
+  puts "Goodbye"
+end
 
+def run_guessing_game
+  gameend=false
+  while gameend==false
+    puts "Guess a number between 1 and 6."
+    guess=gets.chomp
+  end
 end
