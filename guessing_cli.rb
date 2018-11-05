@@ -18,6 +18,8 @@ def run_guessing_game(*args)
       gameend=true
     else
       puts "The computer guessed #{guess}."
+      exitgame()
+      gameend=true
     end
   end
 end
