@@ -16,7 +16,7 @@ def run_guessing_game
       exitgame()
       gameend=true
     else
-      puts "The computer guessed #{number}""
+      puts "The computer guessed #{number}"
     end
   end
 end
