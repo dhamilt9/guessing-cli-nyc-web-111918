@@ -10,7 +10,7 @@ def run_guessing_game
   while gameend==false
     guess=gets.chomp
     guess=guess.to_i
-    if guess.is_int?
+    if guess.is_a?(Integer)
       puts "yup"
     else
       puts "nope"
