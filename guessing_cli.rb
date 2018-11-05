@@ -9,13 +9,6 @@ def run_guessing_game
   puts "(Hint, it's #{number})"
   while gameend==false
     guess=gets.chomp
-    if guess.to_int.is_a?(Integer)
-      puts "yup"
-    else
-      if guess=="exit"
-        exitgame()
-        gameend=true
-      end
-    end
+    guess=guess.to_i
   end
 end
