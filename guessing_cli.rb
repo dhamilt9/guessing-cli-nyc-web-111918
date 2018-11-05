@@ -14,6 +14,8 @@ def run_guessing_game
         exitgame()
         gameend=true
       end
+    else
+      puts "Yup"
     end
   end
 end
