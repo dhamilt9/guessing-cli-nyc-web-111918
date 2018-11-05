@@ -10,12 +10,12 @@ def run_guessing_game
   while gameend==false
     guess=gets.chomp
     if guess.is_a?(Integer)
+      puts "yup"
+    else
       if guess=="exit"
         exitgame()
         gameend=true
       end
-    else
-      puts "Yup"
     end
   end
 end
