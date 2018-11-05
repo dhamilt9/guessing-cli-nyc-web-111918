@@ -14,7 +14,7 @@ def run_guessing_game
         exitgame()
         gameend=true
       end
-    elsif guess.to_i==number
+    elsif guess.to_i==number.to_i
       puts "You guessed the correct number!"
       exitgame()
       gameend=true
