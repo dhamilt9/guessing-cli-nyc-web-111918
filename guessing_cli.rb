@@ -11,6 +11,12 @@ def run_guessing_game
     if guess=="exit"
       exitgame()
       gameend=true
+    elsif guess==number
+      puts "You guessed the correct number!"
+      exitgame()
+      gameend=true
+    else
+      puts "The computer guessed #{number}""
     end
   end
 end
