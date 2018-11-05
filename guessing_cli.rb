@@ -2,7 +2,7 @@ def exitgame
   puts "Goodbye!"
 end
 
-def run_guessing_game
+def run_guessing_game(*args)
   gameend=false
   number=rand(1..6)
   puts "Guess a number between 1 and 6."
