@@ -15,8 +15,6 @@ def run_guessing_game
     end
     if guess.to_i==number.to_i
       puts "You guessed the correct number!"
-      exitgame()
-      gameend=true
     else
       puts "The computer guessed #{guess}."
     end
