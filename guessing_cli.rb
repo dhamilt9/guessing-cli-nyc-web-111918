@@ -8,9 +8,11 @@ def run_guessing_game
   while gameend==false
     puts "Guess a number between 1 and 6."
     guess=gets.chomp
-    if guess=="exit"
-      exitgame()
-      gameend=true
+    if !guess.is_a?integer
+      if guess=="exit"
+        exitgame()
+        gameend=true
+      end
     elsif guess.to_i==number
       puts "You guessed the correct number!"
       exitgame()
