@@ -1,5 +1,5 @@
 def exitgame
-  puts "Goodbye"
+  puts "Goodbye!"
 end
 
 def run_guessing_game
