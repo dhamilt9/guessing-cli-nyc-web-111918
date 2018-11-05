@@ -8,12 +8,12 @@ def run_guessing_game
   while gameend==false
     puts "Guess a number between 1 and 6."
     guess=gets.chomp
+    puts guess
+    puts number
     if guess=="exit"
       exitgame()
       gameend=true
     elsif guess==number
-      puts guess
-      puts number
       puts "You guessed the correct number!"
       exitgame()
       gameend=true
